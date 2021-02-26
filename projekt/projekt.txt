@@ -1,0 +1,29 @@
+AutoExpert Service
+
+W projekcie użyć JS lub jQuery do:
+- menu hamburger +
+- slider
+- przewijanie strony do danego miejsca (scrollowanie menu) dzień 14 kursu+
+- strzałka powrotu na górę strony zamiast fixed menu
+
+Użyć animation, transition + i transform +
+
+Menu nawigacji i logo np. podobne do tego na stronie PLAY NOW +
+
+
+color: #139DF8  - facebook
+color: #C92353	- ig
+color: #1A91DA  - tt
+
+Stworzyć podstrony:
+
+Podstrony - stworzyć osobne style css do nich i zamiast nawigacji przycisk 
+i napis: powrót do strony głównej na górze strony (position fixed) +
+
+- Podstrona O nas - efekty i układ jak w projekcie z dnia 14 - animacje wjeżdżające z boku, można dodać jakąś galerię zdjęć (flexbox) z powiększeniem po najechaniu bądź po kliknięciu (jQ, JS):
+
+- header +
+- sekcja 1 animacje +
+- sekcja 2 +
+- sekcja 3 galeria +
+

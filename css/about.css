@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #212121;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  min-height: 20vh;
+  width: 100%;
+  background-image: url(../img/lambo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header div.bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 20vh;
+}
+
+.backHomeDesktop {
+  display: none;
+}
+
+.backHomeMobile {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+}
+
+.backHomeMobile a {
+  font-size: 22px;
+  color: white;
+}
+
+div.title {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 11px;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+span.tit {
+  color: rgb(201, 120, 14);
+}
+
+.goToUp {
+  display: none;
+}
+
+.goToUp.show {
+  display: block;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 28px;
+  height: 28px;
+  background-color: rgb(43, 43, 43);
+  text-align: center;
+  z-index: 99;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 8%;
+}
+
+.goToUp a {
+  color: white;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.goToUp:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+@media (min-width: 411px) {
+  .backHomeMobile a {
+    font-size: 26px;
+  }
+
+  div.title {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .backHomeMobile a {
+    font-size: 44px;
+  }
+
+  div.title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  header {
+    min-height: 30vh;
+  }
+
+  header div.bg {
+    min-height: 30vh;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .backHomeMobile a {
+    font-size: 30px;
+  }
+
+  div.title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .backHomeMobile {
+    display: none;
+  }
+
+  .backHomeDesktop {
+    display: block;
+    position: fixed;
+    top: 2%;
+    left: 5%;
+  }
+
+  .backHomeDesktop a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    color: white;
+  }
+
+  .backHomeDesktop a i {
+    margin-right: 15px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .backHomeDesktop a:hover {
+    color: #b3382d;
+    font-weight: 700;
+  }
+
+  span.back {
+    display: inline-block;
+    transform: translateY(-35%);
+  }
+
+  div.title {
+    font-size: 26px;
+  }
+
+  .goToUp.show {
+    width: 40px;
+    height: 40px;
+  }
+
+  .goToUp a {
+    line-height: 40px;
+    font-size: 26px;
+  }
+
+}
+
+
+
+/* SEKCJA 1 */
+
+section.team {
+  min-height: 90vh;
+  background-color: rgb(26, 26, 26);
+}
+
+.ourTeam {
+  padding: 40px 0 50px 0;
+  text-align: center;
+}
+
+.ourTeam a {
+  background-color: rgb(41, 41, 41);
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5%;
+  font-size: 20px;
+  color: white;
+}
+
+.teamwrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.img1 img,
+.img2 img,
+.img3 img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.dscr1,
+.dscr2,
+.dscr3 {
+  background-color: rgb(201, 120, 14);
+  padding: 10px 20px;
+  margin-bottom: 14px;
+}
+
+.dscr3 {
+  margin-bottom: 13px;
+}
+
+.dscr1 h3,
+.dscr2 h3,
+.dscr3 h3 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.dscr1 p,
+.dscr2 p,
+.dscr3 p {
+  color: rgb(236, 236, 236);
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 411px) {
+
+  .img1 img,
+  .img2 img,
+  .img3 img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .dscr1 h3,
+  .dscr2 h3,
+  .dscr3 h3 {
+    padding: 10px 20px 20px 20px;
+    font-size: 22px;
+  }
+
+  .dscr1 p,
+  .dscr2 p,
+  .dscr3 p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+  .ourTeam {
+    padding: 50px;
+  }
+
+  .ourTeam a {
+    padding: 20px 50px;
+    font-size: 40px;
+  }
+
+  .teamwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    flex-basis: 30%;
+  }
+
+  .dscr1,
+  .dscr2,
+  .dscr3 {
+    flex-basis: 65%;
+
+  }
+
+  .dscr3 {
+    margin-bottom: 13px;
+  }
+
+  .dscr1 h3,
+  .dscr2 h3,
+  .dscr3 h3 {
+    font-size: 30px;
+  }
+
+  .dscr1 p,
+  .dscr2 p,
+  .dscr3 p {
+    font-size: 22px;
+  }
+
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+  .ourTeam a {
+    padding: 15px 40px;
+    font-size: 30px;
+  }
+
+  .dscr1,
+  .dscr2,
+  .dscr3 {
+    margin: 20px 50px;
+    /* border-radius: 4%; */
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+
+  .dscr1,
+  .dscr2,
+  .dscr3 {
+    padding: 20px 40px 40px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ourTeam {
+    padding: 60px;
+  }
+
+  .ourTeam a {
+    padding: 30px 60px;
+    font-size: 50px;
+  }
+
+  .teamwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    flex-basis: 44%;
+  }
+
+  .img1 img,
+  .img2 img,
+  .img3 img {
+    height: 350px;
+    width: 400px;
+  }
+
+  .dscr1,
+  .dscr2,
+  .dscr3 {
+    flex-basis: 55%;
+    margin: 0 0 13px 0;
+  }
+
+  .dscr1 h3,
+  .dscr2 h3,
+  .dscr3 h3 {
+    font-size: 30px;
+  }
+
+  .dscr1 p,
+  .dscr2 p,
+  .dscr3 p {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  /* ANIMACJA */
+  .img2,
+  .img3,
+  .dscr2,
+  .dscr3 {
+    transition: 1s;
+  }
+
+  .img2,
+  .img3 {
+    transform: translate(-100vw);
+  }
+
+  .dscr2,
+  .dscr3 {
+    transform: translate(100vw)
+  }
+
+  .img2.active,
+  .img3.active,
+  .dscr2.active,
+  .dscr3.active {
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .img1,
+  .img2,
+  .img3 {
+    flex-basis: 38%;
+  }
+
+}
+
+/* SEKCJA 3 */
+
+section.reasons {
+  min-height: 70vh;
+  background-image: url(../img/car2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.reasons div.rbg {
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+div.rbg h3 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+div.rbg li {
+  color: rgb(201, 120, 14);
+  font-weight: 700;
+  padding: 3px 15px;
+  margin-left: 20px;
+}
+
+div.rbg p {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media (min-width: 360px) {
+  div.rbg li {
+    padding: 5px 20px;
+    margin-left: 40px;
+  }
+
+}
+
+@media (min-width: 411px) {
+  div.rbg h3 {
+    padding-bottom: 70px;
+  }
+
+  div.rbg li {
+    margin-left: 50px;
+  }
+
+  div.rbg p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  div.rbg h3 {
+    padding: 40px 50px 50px 50px;
+    font-size: 30px;
+  }
+
+  div.rbg ol {
+    font-size: 24px;
+  }
+
+  div.rbg li {
+    margin-left: 100px;
+  }
+
+  div.rbg p {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  div.rbg h3 {
+    padding-bottom: 20px;
+  }
+
+  div.rbg li {
+    margin-left: 70px;
+  }
+
+  div.rbg p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+
+  section.reasons {
+    min-height: 80vh;
+  }
+
+  section.reasons div.rbg {
+    min-height: 80vh;
+
+  }
+
+  div.rbg h3 {
+    padding-bottom: 30px;
+  }
+
+  div.rbg li {
+    margin-left: 120px;
+  }
+
+  div.rbg p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+
+  div.rbg h3 {
+    padding-bottom: 40px;
+  }
+
+  div.rbg li {
+    margin-left: 180px;
+  }
+
+  div.rbg p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.reasons {
+    display: flex;
+  }
+
+  .transparent {
+    flex-basis: 60%;
+  }
+
+  .rbg {
+    flex-basis: 40%;
+  }
+
+  div.rbg h3 {
+    padding-bottom: 80px;
+    font-size: 26px;
+  }
+
+  div.rbg li {
+    margin-left: 50px;
+  }
+
+  div.rbg p {
+    font-size: 18px;
+  }
+}
+
+
+/* SEKCJA 4 */
+
+section.gallery {
+  min-height: 70vh;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  text-align: center;
+}
+
+div.gallerywrap {
+  padding: 50px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.picture {
+  flex-basis: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .picture {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 533px) {
+  .picture {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 812px) {
+  .picture {
+    flex-basis: 30%;
+    flex-grow: 1;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .picture {
+    flex-basis: 25%;
+    transition: .7s;
+  }
+
+  .picture:hover {
+    transform: scale(1.5);
+  }
+}

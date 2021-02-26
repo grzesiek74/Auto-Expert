@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #212121;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../img/repaircost.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+header div.bg {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* wersja mobile */
+
+.backToHomeMobile {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+
+.backToHomeMobile i {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.backToHome {
+  display: none;
+}
+
+.prices {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+}
+
+
+.prices h2 {
+  /* text-align: center; */
+  text-transform: uppercase;
+  /* color: rgb(187, 187, 187); */
+  color: #e2b13f;
+  font-size: 20px;
+}
+
+.service {
+  margin-right: 40px;
+}
+
+.services,
+.costs {
+  margin-top: 20px;
+}
+
+ul.servlist,
+ul.costlist {
+  list-style: none;
+}
+
+ul.costlist {
+  text-align: center;
+}
+
+ul.servlist p,
+ul.costlist p {
+  color: White;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+@media (min-width: 360px) {
+  .prices {
+    top: 20%;
+  }
+
+  .prices h2 {
+    font-size: 22px;
+  }
+
+  .service {
+    margin-right: 50px;
+  }
+
+  .services,
+  .costs {
+    margin-top: 30px;
+  }
+
+  ul.servlist p,
+  ul.costlist p {
+    padding-bottom: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 411px) {
+
+  .prices h2 {
+    font-size: 26px;
+  }
+
+  .service {
+    margin-right: 50px;
+  }
+
+  ul.servlist p,
+  ul.costlist p {
+    font-size: 16px;
+  }
+
+  .backToHomeMobile i {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .prices h2 {
+    font-size: 40px;
+  }
+
+  .service {
+    margin-right: 70px;
+  }
+
+  ul.servlist p,
+  ul.costlist p {
+    font-size: 24px;
+    padding-bottom: 18px;
+  }
+
+  .backToHomeMobile i {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+
+  .prices {
+    top: 10%;
+  }
+
+  .prices h2 {
+    font-size: 20px;
+  }
+
+  .service {
+    margin-right: 40px;
+  }
+
+  .services,
+  .costs {
+    margin-top: 15px;
+  }
+
+  ul.servlist p,
+  ul.costlist p {
+    font-size: 11px;
+    padding-bottom: 7px;
+  }
+
+  .backToHomeMobile i {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+  .prices {
+    top: 8%;
+  }
+
+  .prices h2 {
+    font-size: 22px;
+  }
+
+  .service {
+    margin-right: 50px;
+  }
+
+  .services,
+  .costs {
+    margin-top: 18px;
+  }
+
+  ul.servlist p,
+  ul.costlist p {
+    font-size: 12px;
+    padding-bottom: 8px;
+  }
+
+  .backToHomeMobile i {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+
+  .service {
+    margin-right: 100px;
+  }
+}
+
+
+
+/* wersja na desktop */
+@media (min-width: 1024px) {
+  .backToHomeMobile {
+    display: none;
+  }
+
+  .backToHome {
+    display: block;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+  }
+
+  .backToHome a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    color: white;
+  }
+
+  .backToHome a i {
+    margin-right: 15px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .backToHome a:hover {
+    color: #b3382d;
+  }
+
+  .prices {
+    top: 25%;
+    left: 50%;
+  }
+
+  .prices h2 {
+    font-size: 30px;
+  }
+
+  .service {
+    margin-right: 200px;
+  }
+
+  .services,
+  .costs {
+    margin-top: 22px;
+  }
+
+  ul.servlist p,
+  ul.costlist p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  span.back {
+    display: inline-block;
+    transform: translateY(-35%);
+  }
+
+  ul.servlist li p,
+  ul.costlist li p {
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  ul.servlist li p:hover,
+  ul.costlist li p:hover {
+    color: #b3382d;
+  }
+
+}
